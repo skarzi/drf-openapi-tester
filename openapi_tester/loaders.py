@@ -11,7 +11,6 @@ from urllib.parse import urlparse
 
 import requests
 import yaml
-from django.urls import Resolver404, resolve
 from django.utils.functional import cached_property
 from openapi_spec_validator import openapi_v2_spec_validator, openapi_v30_spec_validator, openapi_v31_spec_validator
 from prance.util.resolver import RefResolver
@@ -20,6 +19,11 @@ from rest_framework.settings import api_settings
 
 from openapi_tester.constants import UNDOCUMENTED_SCHEMA_SECTION_ERROR
 from openapi_tester.exceptions import UndocumentedSchemaSectionError
+
+try:
+    from django.urls import Resolver404, resolve
+except ImportError:
+    from django.core.urlresolvers import Resolver404, resolve
 
 if TYPE_CHECKING:
     from typing import Any, Callable
