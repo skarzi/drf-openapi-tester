@@ -1374,4 +1374,4 @@ drf-yasg = ["drf-yasg"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.7"
-content-hash = "0b41b36b76c3e1c4f11fb56bf22a147c75ec54600f5bcc088ba5a1dbdf14c7e7"
+content-hash = "433168130181ffd8e44f6e6ea3b8aaa6a4c9206337c28d963bdb3dcbf9cc72c0"

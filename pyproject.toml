@@ -46,7 +46,7 @@ python = "^3.7"
 django = "*"
 djangorestframework = "*"
 inflection = "*"
-openapi-spec-validator = ">=0.4"
+openapi-spec-validator = ">=0.5"
 prance = "*"
 pyYAML = "*"
 drf-spectacular = { version = "*", optional = true }
